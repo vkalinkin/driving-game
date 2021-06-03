@@ -1,3 +1,7 @@
+// var $car = document.querySelector('.car');
+
+// var x = 0;
+// var y = 0;
 // var $raceTrack = document.querySelector('.race-track');
 
 // function Car(imgUrl){

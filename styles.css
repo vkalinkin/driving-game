@@ -23,3 +23,7 @@ main {
 .car > img {
   width: 150px;
 }
+
+.car {
+  position: absolute;
+}
