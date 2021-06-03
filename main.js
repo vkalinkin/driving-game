@@ -1,11 +1,22 @@
-// var $raceTrack = document.querySelector('.race-track');
+var $car = document.querySelector('.car');
 
-// function Car(imgUrl){
-//   this.imgUrl = imgUrl;
-// }
+var moveBoolean = false;
 
-// var myCar = new Car("images/f1.svg");
-// var carImg = document.createElement('img');
-// carImg.setAttribute('src', myCar.imgUrl);
+var x = 0;
+// var y = 0;
 
-// $raceTrack.appendChild(carImg);
+// var moveInterval = setInterval(moveCar, 16);
+setInterval(moveCar, 16);
+
+function moveCar(event) {
+  if (moveBoolean === true) {
+    x += 2;
+    $car.style.left = x + 'px';
+  }
+}
+
+document.addEventListener('keydown', function (event) {
+  if (`${event.code}` === 'Space') {
+    moveBoolean = true;
+  }
+});
