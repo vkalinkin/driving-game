@@ -2,14 +2,10 @@
 
 // var x = 0;
 // var y = 0;
-// var $raceTrack = document.querySelector('.race-track');
 
-// function Car(imgUrl){
-//   this.imgUrl = imgUrl;
+// var moveInterval = setInterval(moveCar, 16);
+
+// function moveCar(event){
+//   x += 2;
+//   $car.style.left = x + 'px';
 // }
-
-// var myCar = new Car("images/f1.svg");
-// var carImg = document.createElement('img');
-// carImg.setAttribute('src', myCar.imgUrl);
-
-// $raceTrack.appendChild(carImg);
