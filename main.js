@@ -4,15 +4,25 @@ var moveBoolean = false;
 
 var direction = 'e';
 var x = 0;
-// var y = 0;
+var y = 0;
 
-// var moveInterval = setInterval(moveCar, 16);
 setInterval(moveCar, 16);
 
 function moveCar(event) {
   if (moveBoolean === true) {
-    x += 2;
-    $car.style.left = x + 'px';
+    if (direction === 'e') {
+      x += 4;
+      $car.style.left = x + 'px';
+    } else if (direction === 'w') {
+      x -= 4;
+      $car.style.left = x + 'px';
+    } else if (direction === 'n') {
+      y -= 4;
+      $car.style.top = y + 'px';
+    } else if (direction === 's') {
+      y += 4;
+      $car.style.top = y + 'px';
+    }
   }
 }
 
