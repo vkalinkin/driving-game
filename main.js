@@ -19,22 +19,22 @@ function moveCar(event) {
 function rotateCar() {
   if (direction === 's') {
     $car.style.transform = 'rotate(90deg)';
-    $car.style.transition = 'all 0.4s';
+
   } else if (direction === 'w') {
     $car.style.transform = 'rotate(180deg)';
-    $car.style.transition = 'all 0.4s';
+
   } else if (direction === 'n') {
     $car.style.transform = 'rotate(270deg)';
-    $car.style.transition = 'all 0.4s';
+
   } else if (direction === 'e') {
     $car.style.transform = 'rotate(0deg)';
-    $car.style.transition = 'all 0.4s';
+
   }
 }
 
 document.addEventListener('keydown', function (event) {
   if (`${event.code}` === 'Space') {
-    moveBoolean = true;
+    moveBoolean = !moveBoolean;
   } else if (`${event.code}` === 'ArrowRight') {
     direction = 'e';
   } else if (`${event.code}` === 'ArrowLeft') {
