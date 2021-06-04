@@ -11,8 +11,15 @@ setInterval(moveCar, 16);
 
 function moveCar(event) {
   if (moveBoolean === true) {
-    x += 2;
-    $car.style.left = x + 'px';
+    // x += 2;
+    // $car.style.left = x + 'px';
+    if (direction === 'e') {
+      x += 2;
+      $car.style.left = x + 'px';
+    } else if (direction === 'w') {
+      x -= 2;
+      $car.style.left = x + 'px';
+    }
   }
 }
 
